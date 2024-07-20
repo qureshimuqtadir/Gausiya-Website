@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+
+
+    <title>Online Education</title>
+</head>
+<script>
+    burger = document.querySelector('.burger')
+navbar = document.querySelector('.navbar')
+navlist = document.querySelector('.nav-list')
+rightNav = document.querySelector('.rightNav')
+
+
+
+burger.addEventListener('click', () =>{;
+rightNav.classlist.toggle('v-class-resp');
+navlist.classlist.toggle('v-class-resp');
+navbar.classlist.toggle('h nav-list');
+
+
+})
+</script>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="Laptop image.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <ul class="rightNav v-class-resp"></ul>
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="sectionTag text-big">Gausiya Famous Chai is here</p>
+                <p class="sectionsubTag text-small">Chai tea can be purchased in most cafés, but it is easy to buy and affordable at Gausiya Hotel, which offers fabulous chai throughout Dharavi. <br>
+                 Our Gausiya Hotel chai provides a gentle energy boost without the crash associated with coffee, and its spices help sustain energy by promoting better metabolism and digestion. Incorporating chai into your daily routine can enhance mood, reduce stress, and improve overall health. </p>
+                <div class="button">
+                    <button class="btn">Fabulous</button>
+                    <button class="btn">Lovely</button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="Chai Images.jpg" height="300px" width="400px" alt="laptop image"
+                    class="imgFluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">All these cold drinks are sold in our Gausia Hotel.</p>
+            <p class="sectionSubtagtext-small"><br><br>
+                <h1>Mirinda</h1>
+                <b>
+                 Flavor Variety: Offers a range of fruit flavors, which can be appealing and enjoyable.<br>
+            Hydration: Like other soft drinks, it can provide temporary hydration</b> <br><br>
+            
+            <h1>Sprite</h1>
+            <b>Refreshing: Known for its crisp and clean taste, which can be particularly refreshing on a hot day.
+                Caffeine-Free: Like 7Up, Sprite does not contain caffeine.</b><br><br>
+                <h1>Fanta</h1>
+                <b>Flavor Variety: Comes in various fruity flavors, which can be enjoyable and cater to different taste preferences.<br>
+                    Hydration: Provides temporary hydration, though it's less hydrating than water.</b>
+                </p>
+        </div>
+        <div class="thumbnail">
+            <img src="coldrinks images.jpg" alt="coldrink img" height="300" width="400">
+        </div>
+    </section>
+    <hr>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big"> Gausiya's milk is the best in all of Dharavi.</p>
+            <p class="sectionSubtagtext-small">.<b> It’s known for being really rich and creamy, and always fresh. The milk comes from well-cared-for cows and is carefully processed to keep its great taste. Many locals choose it because it’s nutritious and high-quality. For lots of families, it’s an important part of their daily diet."<br><br>
+            Gausiya's commitment to quality has earned it a strong reputation in the community. The milk is delivered daily, ensuring that it reaches homes in perfect condition. People appreciate the consistency and reliability of Gausiya's products. As a result, it has become a favorite choice for both cooking and drinking."<br>
+                <br>In addition to its great taste, Gausiya's milk helps local farmers and supports the local economy. The company is proud of its fair practices and involvement in the community. It’s not just about the milk; it’s about building trust and connections in Dharavi. Many people see buying Gausiya's milk as a way to support their neighbors and help their community."<br>
+            </b>
+        </p>
+                 
+        </div>
+        <div class="thumbnail">
+            <img src="milk img.jpg" alt="milk image" height="300" width="400">
+        </div>
+    </section><br>
+    <hr>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">The best lassi in all of Dharavi is from Gausiya Hotel</p>
+            <p class="sectionSubtagtext-small">
+                <b><br>"The best lassi in all of Dharavi is from Gausiya Hotel. Their lassi is known for being extra creamy and perfectly sweet, with a refreshing taste that keeps people coming back. Made from fresh, high-quality ingredients, each glass is a delight. Gausiya Hotel has a special recipe that blends just the right amount of yogurt, spices, and flavorings.<br><br>
+
+                Many locals and visitors alike agree that the lassi here is unbeatable. It's served chilled, making it a perfect treat on a hot day. The hotel takes pride in its traditional preparation methods, ensuring every batch is consistent and delicious. The friendly staff and welcoming atmosphere make it a great place to enjoy this popular drink.<br><br>
+                
+                Gausiya Hotel has become a favorite spot for those who love lassi. It’s not just about the drink; it’s also about the experience of enjoying it in a local, beloved establishment. For many, a visit to Gausiya Hotel isn’t complete without having their famous lassi." </b></p>
+             
+        </div>
+        <div class="thumbnail">
+            <img src="lassi image.jpg" alt="laptop image" height="300" width="400"
+                class="imgFluid">
+        </div>
+    </section>
+    <br>
+    <hr>
+
+    <section class="contact" id="Contact us">
+        <h2 class="text-center"> Contact us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="email" id="emal" placeholder="Enter your email">
+            <textarea class="form-input" type="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+
+            copyright &copy; 2027 - www.iEducate.com - All rights reserved
+        </p>
+    </footer>
+    <!-- <script src="js/resp.js"></script> -->
+</body>
+
+</html>
